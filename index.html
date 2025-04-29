@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: white;
+            text-decoration: none;
+
+        }
+        a:visited {
+            color: red;
+
+        }
+        a:hover {
+            color:#bed3e6;
+            font-weight: bold;
+        }
+        a:active {
+            color: yellow;
+
+        }
+        ul {
+            list-style: none;
+        }
+        #menu li {
+            margin-top: 5px;
+            padding: 10px;
+            display: inline;
+        }
+        #menu {
+            width: 1000px;
+            padding: 10px;
+            margin: 20px 0 0 0;
+            background-color: #31395c;
+        }
+        .intro {
+            width: 640px;
+            margin: 10px;
+            padding: 10px;
+            border: solid 1px #e6e6ee;
+            background-color: #ece8f2;
+        }
+        .drink {
+            border-radius: 15px;
+            border: solid 1px #270e3d;
+            box-shadow: 6px 6px 5px #888888;
+            margin: 10px 50px 10px 40px;
+            padding: 10px;
+        }
+        .coffee {
+            padding: 10px 40px;
+            font-weight: bold;
+            border-bottom:solid 1px #e5ccdc;
+        }
+        
+        #visit {
+            width: 1020px;
+            padding-bottom: 5px;
+            border-bottom: solid 1px #aba0ba;
+        }
+        .food ul {
+            display: inline-block;
+            list-style: none;
+            margin-right: 90px;
+            padding: 0;
+        }
+        .food li{
+            text-align: center;
+            margin-top: 10px;
+        }
+        #floor li {
+            list-style: circle;
+            padding: 10px 0 0 10px;
+        }
+        #open li {
+            list-style: circle;
+            padding: 10px 0 0 10px;
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="index.html">홈 |</a></li>
+        <li><a href="book_banner.html">책 표지 |</a></li>
+        <li><a href="inline_block.html">인라인&블록 |</a></li>
+        <li><a href="boxes.html">박스 |</a></li>
+    </ul>
+    <br>
+
+    <div>
+        <img src="cafe.png" width="1020" height="400">
+    </div>
+
+    <h1 id="visit">+Main Street cafe</h1>
+    
+    <h2>1. 소개</h2>
+    <div class="intro">
+    <p> 경기도 평택시에 위치한 대형 복합문화공간으로,
+        뉴욕을 연상시키는 다양한 테마로 구성되어있어 이국적인 분위기를 즐길 수 있습니다.
+        독특하고 화려한 공간 속에서 여유로운 하루를 보내보세요!</p>
+    </div>
+    <br>
+    <h2>2. 운영 안내</h2>
+    <ul id="open">
+        <li>위치: 경기 평택시 포승읍 포승산단로 13번길 37-21</li>
+        <li>운영시간: 매일 10:00 - 21:00 (20:30 라스트 오더)</li>
+    </ul> 
+
+    <br>
+
+    <h2>3. 대표 메뉴</h2> 
+
+   
+    <div class="food"> 
+        <ul>
+            <li><img class="drink" src="coffee.jpg" width="135" height="160"></li>
+            <li class="coffee">뉴욕크림라떼</li>
+            <li>실키한 크림과 에스프레소가
+                <br>만난 메인스트릿의 시그니처 커피</li>
+        </ul>
+        <ul>
+            <li><img class="drink" src="va.jpg" width="135" height="160"></li>
+            <li class="coffee">뉴욕바닐라쉐이크</li>
+            <li>마쉬멜로우, 초콜릿 등이<br> 토핑으로 올려진 뉴욕식 쉐이크</li>
+        </ul>
+        <ul>
+            <li><img class="drink" src="long.jpg" width="135" height="160"></li>
+            <li class="coffee">롱아일랜드</li>
+            <li>빵에 부드러운 크림을 발라<br>카스테라 가루를 묻힌 시그니처 메뉴</li>
+        </ul></div>
+       
+    
+    <br>
+
+    <h2>4. 층별 안내</h2>
+    <ul id="floor">        
+        <li>4F &nbsp;루프탑 &nbsp;|&nbsp; 서해대교를 배경으로한 포토존</li>
+        <li>3F &nbsp;레스토랑 &nbsp;|&nbsp; 브런치와 식사를 즐길 수 있는 레스토랑</li>
+        <li>2F &nbsp;테마 공간 &nbsp;|&nbsp; 캐주얼 라운지, 가든, 라이브러리 등 다양한 테마공간</li>
+        <li>1F &nbsp;카페&베이커리 &nbsp;|&nbsp; 패밀리존이 마련된 음료와 베이커리를 즐길 수 있는 공간</li>
+    </ul><br><br>
+
+</body>
+</html>

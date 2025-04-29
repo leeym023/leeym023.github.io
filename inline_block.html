@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: white;
+            text-decoration: none;
+
+        }
+        a:visited {
+            color: red;
+
+        }
+        a:hover {
+            color:#bed3e6;
+            font-weight: bold;
+        }
+        a:active {
+            color: yellow;
+        }
+
+        a.site:link {
+            color: black;
+        }
+        a.site:visited {
+            color: red;
+
+        }
+        a.site:hover {
+            color: blue;
+            font-weight: bold;
+        }
+        a.site:active {
+            color: yellow;
+        }
+
+        ul {
+            list-style: none;
+        }
+        #menu li {
+            margin-top: 5px;
+            padding: 10px;
+            display: inline;
+        }
+        #menu {
+            width: 1000px;
+            padding: 10px;
+            margin: 20px 0 0 8px;
+            background-color: #31395c;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style-type: none;
+        }
+        #off {
+            width:500px;
+            padding: 10px;
+            margin: 20px 0 0 48px;
+            background-color: #eeeeee;
+            border: solid 1px #aaaaaa;
+            text-align: center;
+        }
+        #off li{
+            display: inline;
+        }
+        .site {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="index.html">홈 |</a></li>
+        <li><a href="book_banner.html">책 표지 |</a></li>
+        <li><a href="inline_block.html">인라인&블록 |</a></li>
+        <li><a href="boxes.html">박스 |</a></li>
+    </ul>
+    <br>
+    <ul id="off">
+        <li>회사소개 | </li>
+        <li>제품소개 | </li>
+        <li>공지사항 | </li>
+        <li>업무제휴 | </li>
+        <li>고객센터</li>
+    </ul>
+    <br>
+    <h2>인라인과 블록</h2>
+
+    <h3>1. 인라인 요소</h3>
+    <span>텍스트1</span>
+    <span>텍스트2</span>
+    <span>텍스트3</span>
+    <img src="image1.jpg">
+    <img src="image2.jpg">
+
+    <h3>2. 블록 요소</h3>
+    <p>이것은 단락입니다.</p>
+    <div>박스 1</div>
+    <div>박스 2</div>    
+
+    <br>
+
+    <p>수직 방향 메뉴 : </p>
+    <a class="site" href="http://naver.com" target="_blank">네이버</a>
+    <a class="site" href="http://daum.net" target="_blank">다음</a>
+    <a class="site" href="http://google.com" target="_blank">구글</a>
+
+</body>
+</html>
