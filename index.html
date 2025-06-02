@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 채움</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial';
+            background-color: #F8F5F2;
+            color: #5F5A4D;
+        }
+        a:link, a:visited, a:hover, a:active {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+        }
+       
+        
+        
+        header {
+            height: 170px;
+            background-color: white;
+        }
+        header #logo {
+            margin: auto;
+            height: 170px;
+            padding: 20px;
+            display: block;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        main {
+            padding: 40px 20px;
+            margin: auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #D6CCC2;
+            color: #fff;
+        }
+
+
+        
+        
+        .card {
+            padding: 15px;
+            margin-bottom: 40px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 5px 5px 5px #969595;
+            background-color: white;
+        }
+        .card img {
+            width: 100%;
+            height: 400px;
+            border-radius: 5px;
+            margin-top: 30px;
+            object-fit: cover;
+        }
+
+        #home {
+            width: 260px;
+            float: left;
+        }
+        #home img {
+            max-width: 100%;
+            height: auto;
+        }
+        #hi {
+            width: 600px;
+            float: left;
+            margin-top: 50px;
+        }
+        
+        #hi h2 {
+            color:  #a09a94;
+        }
+        .intro h2 {
+            color: #a09a94;
+            margin-bottom: 20px;
+        }
+        .intro {
+            padding: 40px 20px;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            border-radius: 10px;
+            background-color: #EFE9E4;
+        }
+
+        @media screen and (max-width: 800px) {
+            #page {
+                width: 100%;
+                padding: 0;
+                margin-top: 30px;
+            }
+            header {
+                height: auto;
+            }
+            header #logo { 
+                height: 130px;
+                padding: 15px;
+            }
+            main {
+                padding: 30px 0;
+            }
+            .intro {
+                padding: 30px 15px;
+                margin-bottom: 40px;
+            }
+            .intro h2 { 
+                text-align: center;
+            }
+            #home, #hi {
+                width: 100%;
+                float: none;
+                text-align: center;
+            }
+            #home {
+                margin-bottom: 20px;
+            }
+            #home img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #hi {
+                margin-top: 20px; 
+            }
+
+            .card img {
+                height: 320px; 
+                margin-top: 20px;
+            }
+
+            .topnav a {
+                padding: 8px 25px; 
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            #page {
+                width: 100%;
+                padding: 0 15px; 
+                margin-top: 20px;
+            }
+            header #logo {
+                height: 100px; 
+                padding: 10px;
+            }
+
+            .topnav a {
+                display: block;
+                float: none; 
+                width: 100%;
+                text-align: center;
+                padding: 12px 0; 
+                border-bottom: 1px solid rgba(255,255,255,0.1); 
+            }
+            .topnav a:last-child {
+                border-bottom: none; 
+            }
+
+            main {
+                padding: 20px 0;
+            }
+            .intro {
+                padding: 25px 10px;
+                margin-bottom: 30px;
+            }
+            .intro h2 {
+                font-size: 1.2em;
+            }
+
+            .card {
+                margin-bottom: 25px;
+            }
+            .card img {
+                height: 280px; 
+                margin-top: 15px;
+            }
+             .card p {
+                font-size: 0.95em;
+            }
+
+            footer {
+                margin-top: 40px;
+                padding: 15px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            body {
+                font-size: 15px; 
+            }
+             #page {
+                padding: 0 10px; 
+                margin-top: 15px;
+            }
+
+            header #logo {
+                height: 80px; 
+            }
+
+            main {
+                padding: 15px 0;
+            }
+            .intro {
+                padding: 20px 10px;
+            }
+            .card {
+                padding: 10px;
+            }
+            .card img {
+                height: 240px; 
+            }
+            .card p {
+                font-size: 0.9em;
+            }
+            footer {
+                font-size: 0.85em;
+            }
+        }
+
+        .topnav{
+            overflow: hidden;
+            background-color: #D6CCC2;
+            text-align: center;
+        }
+        .topnav a{ 
+            display: inline-block;
+            font-weight: bold;
+            padding: 8px 50px;
+            text-decoration: none;
+           
+        }
+        
+        #page {
+            max-width: 980px;
+            width: 100%;
+            margin: auto;
+            margin-top: 45px;
+        } 
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+    
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <section><img id="logo" src="logo.png" ></section>
+        <div class="topnav">
+            <a href="index.html">홈</a>
+            <a href="sub1.html">나의 한칸</a>
+            <a href="sub2.html">취향의 발견</a>
+            <a href="sub3.html">갤러리</a>
+            <a href="sub4.html">쇼핑</a>
+            <a href="sub5.html">커뮤니티</a>
+        </div>    
+    </header>
+
+    <section id="page">
+        <main>
+            <section class="intro">
+                <div id="home"><img src="home.png"></div>
+                <div id="hi">
+                    <h2>오늘의 채움 소개</h2><br>
+                    <p>'오늘의 채움'은 나만의 공간을 만들어가기 위해 다양한 스타일의 인테리어를 탐색하며, <br>서로의 취향과 아이디어를 공유할 수 있는 플랫폼 입니다. 
+                    <br>자취방, 기숙사, 원룸 등 자신만의 공간에 개성을 담아보세요!
+                    </p>
+                </div>
+                <div class="clear"></div>
+            </section>
+        
+            <section class="intro">
+                <h2>오늘의 추천! 구경해보세요.</h2>
+                <div class="card">
+                    <img src="wood_white.jpg">
+                    <p>네츄럴한 분위기의 화이트 우드 원룸</p>
+                </div>
+                <div class="card">
+                    <img src="modern.jpg" alt="">
+                    <p>그레이로 포인트를 준 모던 원룸 인테리어</p>
+                </div>
+                <div class="card">
+                    <img src="blue.jpg">
+                    <p>청량하고 설렘 가득한 파스텔톤 인테리어</p>
+                </div>
+            </section>
+        </main>
+        
+    </section>
+    <footer>
+        <ul id="add">
+            <li>TEL : 010 - 5604 - 0027 E-mail : yml0223@gachon.ac.kr</li>
+            <li>Copyright&copy;2025 오늘의 채움 All rights reserved </li>
+        </ul>
+    </footer>
+
+   
+    
+</body>
+</html>

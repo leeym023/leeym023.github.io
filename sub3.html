@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>취향의 발견</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial';
+            background-color: #F8F5F2;
+            color: #5F5A4D;
+        }
+        a:link, a:visited, a:hover, a:active {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+        }
+        
+        
+        header {
+            height: 170px;
+            background-color: white;
+        }
+        header #logo {
+            margin: auto;
+            height: 170px;
+            padding: 20px;
+            display: block;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        main {
+            padding: 40px 20px;
+            margin: auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #D6CCC2;
+            color: #fff;
+        }
+
+
+        .intro {
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            border-radius: 10px;
+            background-color: #EFE9E4;
+        }
+        #hi {
+            width: 100%;
+            margin-top: 30px;
+                       
+            
+        }
+        #hi p {
+            padding: 10px 30px ;
+            border-top: solid 2px #D8CFC9;
+            width: 900px;
+            margin: 0 0 0 20px;
+        }
+        #hi h2 {
+            text-align: center;
+            padding-bottom: 15px; 
+            font-weight: bold;
+        }
+        
+        .title {
+            border-radius: 10px;
+            background-color: #EFE9E4;
+            margin-top: 30px;
+            padding: 10px 0;
+        }
+        
+        .room img {
+            width: 48%;
+            height: 280px;
+            margin-left: 5px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 3px #666666;
+        }
+        .gallery {
+            max-width: 440px;
+            width: 100%;
+            margin: 40px auto;
+        }
+        .card {
+            display: block;
+            width: 100%;
+            margin: 0 auto 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 8px #666666;
+            padding: 15px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+        }
+        .tag {
+            margin-top: 10px;
+            color: #A47551;
+            font-size: 90%;
+        }
+        .desc {
+            margin-top: 5px;
+            
+            font-size: 95%;
+        }
+        .filt {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .filt button {
+            background-color: #E9E0D6;
+            color: #75655A;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        @media screen and (max-width: 800px) {
+            #page {
+                width: 100%;
+                padding: 0;
+                margin-top: 30px;
+            }
+            header {
+                height: auto;
+            }
+            header #logo { 
+                height: 130px;
+                padding: 15px;
+            }
+            main {
+                padding: 30px 0;
+            }
+            .card img {
+                height: 320px; 
+                margin-top: 20px;
+            }
+
+            .topnav a {
+                padding: 8px 25px; 
+            }
+            
+        }
+
+        @media screen and (max-width: 600px) {
+            #page {
+                width: 100%;
+                padding: 0 15px; 
+                margin-top: 20px;
+            }
+            header #logo {
+                height: 100px; 
+                padding: 10px;
+            }
+
+            .topnav a {
+                display: block;
+                float: none; 
+                width: 100%;
+                text-align: center;
+                padding: 12px 0; 
+                border-bottom: 1px solid rgba(255,255,255,0.1); 
+            }
+            .topnav a:last-child {
+                border-bottom: none; 
+            }
+
+            main {
+                padding: 20px 0;
+            }
+            .card {
+                margin-bottom: 25px;
+            }
+            .card img {
+                height: 280px; 
+                margin-top: 15px;
+            }
+             .card p {
+                font-size: 0.95em;
+            }
+
+            footer {
+                margin-top: 40px;
+                padding: 15px;
+                font-size: 0.9em;
+            }
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: #D6CCC2;
+            text-align: center;
+        }
+        .topnav a{ 
+            display: inline-block;
+            font-weight: bold;
+            padding: 8px 50px;
+            text-decoration: none;
+           
+        }
+        
+        #page {
+            max-width: 980px;
+            width: 100%;
+            margin: auto;
+            margin-top: 45px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+               
+    </style>
+</head>
+<body>
+    <header>
+        <section><img id="logo" src="logo.png" ></section>
+        <div class="topnav">
+            <a href="index.html">홈</a>
+            <a href="sub1.html">나의 한칸</a>
+            <a href="sub2.html">취향의 발견</a>
+            <a href="sub3.html">갤러리</a>
+            <a href="sub4.html">쇼핑</a>
+            <a href="sub5.html">커뮤니티</a>
+        </div>       
+    </header>
+
+    <section id="page">
+        <main>
+            <section class="title">
+                <div id="hi">
+                    <h2>채움 갤러리</h2>
+                </div>
+
+                <div class="filt">
+                    <button>전체</button>
+                    <button>#원룸</button>
+                    <button>#스타일</button>
+                    <button>#꾸미기</button>
+                </div>
+
+                <div class="gallery">
+                    <div class="card">
+                        <img src="gall_main.jpg">
+                        <p class="tag">#데스크테리어 #꾸미기</p>
+                        <p class="desc">아기자기한 소품으로 꾸며본 나의 책상</p>
+                    </div>
+                    <div class="card">
+                        <img src="plan.png">
+                        <p class="tag">#플랜테리어 #홈가드닝</p>
+                        <p class="desc">싱그러운 화초들로 유니크한 공간 만들기</p>
+                    </div>
+                    <div class="card">
+                        <img src="wall.jpg">
+                        <p class="tag">#벽꾸미기 #인테리어 #카드포스터</p>
+                        <p class="desc">다양한 사진 엽서로 허전한 벽 채워보기</p>
+                    </div>
+                </div>   
+            </section>
+            <div class="clear"></div>            
+        </main>       
+    </section>
+
+    <footer>
+        <ul id="add">
+            <li>TEL : 010 - 5604 - 0027 E-mail : yml0223@gachon.ac.kr</li>
+            <li>Copyright&copy;2025 오늘의 채움 All rights reserved </li>
+        </ul>
+    </footer>    
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커뮤니티</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial';
+            background-color: #F8F5F2;
+            color: #5F5A4D;
+        }
+        a:link, a:visited, a:hover, a:active {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+        }
+        
+        header {
+            height: 170px;
+            background-color: white;
+        }
+        header #logo {
+            margin: auto;
+            height: 170px;
+            padding: 20px;
+            display: block;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        main {
+            padding: 40px 20px;
+            margin: auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #D6CCC2;
+            color: #fff;
+        }
+
+
+        .intro {
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            border-radius: 10px;
+            background-color: #EFE9E4;
+        }
+        #hi {
+            width: 100%;
+            margin-top: 20px;     
+        }
+        
+        #hi h2 {
+            text-align: center;
+            padding-bottom: 15px;
+            margin: 0 0 0 20px; 
+            font-weight: bold;
+            border-bottom: solid 2px #D8CFC9;
+            max-width: 900px;
+            width: 90%;
+        }
+        
+        .title {
+            border-radius: 10px;
+            background-color: #EFE9E4;
+            margin-top: 30px;
+            padding: 10px 0;
+        }
+        
+        
+        .item {
+            float: left;
+            margin-right: 20px;
+            padding: 10px;
+        }
+        .item img{ 
+            width: 200px;
+            height: 190px;    
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .manual {
+            padding: 5px;
+        }
+        .manual h4 {
+            padding: 7px;
+        }
+        .rec {
+            overflow: hidden;
+            padding: 10px;
+            margin: 40px;
+            border-radius: 8px;
+        }
+        .rec h3 {
+            margin:10px 0 15px 20px;
+        }
+        .last {
+            border-top: solid 1px #F8F5F2;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+        
+        .comm1 {
+            background-color: #D6CCC2;
+            margin: 20px 0px 0 25px;
+            padding: 10px 0;
+            float: left;
+            width: 47%;
+            border: solid 1px #D6CCC2;
+            color: white;
+            text-align: center;
+            
+        }
+        .comm2 {
+            background-color: white;
+            margin: 20px 0px 0 0px;
+            padding: 10px 0;
+            float: left;
+            width: 47%;
+            border: solid 1px #D6CCC2;
+            color: #D6CCC2;
+            text-align: center;
+            
+        }
+        @media screen and (max-width: 800px) {
+    #page {
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+    header {
+        height: auto;
+    }
+    header #logo {
+        height: 130px;
+        padding: 15px;
+    }
+    main {
+        padding: 30px 15px;
+    }
+    #hi {
+        width: 100%;
+        float: none;
+        margin: 0 auto 30px;
+    }
+    .topnav a {
+        padding: 10px 30px;
+    }
+}
+
+        @media screen and (max-width: 600px) {
+    #page {
+        width: 100%;
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+    header #logo {
+        height: 100px;
+        padding: 10px;
+    }
+    .topnav a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    main {
+        padding: 20px 0;
+    }
+    #hi h2 {
+        font-size: 1.2em;
+    }
+    footer {
+        font-size: 0.9em;
+        padding: 15px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+    header #logo {
+        height: 80px;
+    }
+    main {
+        padding: 15px 0;
+    }
+    #hi p {
+        padding: 10px;
+    }
+    footer {
+        font-size: 0.85em;
+    }
+}
+        .topnav{
+            overflow: hidden;
+            background-color: #D6CCC2;
+            text-align: center;
+        }
+        .topnav a{ 
+            display: inline-block;
+            font-weight: bold;
+            padding: 8px 50px;
+            text-decoration: none;
+           
+        }
+        
+        #page {
+            max-width: 980px;
+            width: 100%;
+            margin: auto;
+            margin-top: 45px;
+        }
+        
+               
+    </style>
+</head>
+<body>
+    <header>
+        <section><img id="logo" src="logo.png" ></section>
+        <div class="topnav">
+            <a href="index.html">홈</a>
+            <a href="sub1.html">나의 한칸</a>
+            <a href="sub2.html">취향의 발견</a>
+            <a href="sub3.html">갤러리</a>
+            <a href="sub4.html">쇼핑</a>
+            <a href="sub5.html">커뮤니티</a>
+        </div>        
+    </header>
+
+    <section id="page">
+        <main>
+            <section class="title">
+                <div id="hi">
+                    <h2>채움 커뮤니티</h2>
+                </div>
+                <div class="comm1">인테리어 팁</div>
+                <div class="comm2">일상 공유</div>
+
+                <div class="clear"></div>
+                
+                <div class="rec">
+                    <div class="item"><img src="tip1.jpg"></div>
+                    <div class="manual">
+                        <h4>[ 첫 자취! 가성비템으로 채워나가는 나의 공간  ]</h4>
+                        <p> 안녕하세요~ @user1 입니다. 드디어 첫 독립을 하게 되었어요! 처음으로 갖게 된 나만의 공간인 만큼, 작은것 하나에도 애정을 담아 꾸며가는 중이랍니다. <br>
+                            텅 빈 공간을 채우려니 생각보다 큰 지출에 가성비 아이템을 찾게되었는데요. 커튼과 아담한 탁자, 편한 의자까지 가성비 제품을 찾아 제가 꿈꾸던 공간이 조금씩 
+                           완성되고 있어요.<br>
+                            벽지와 침구는 아이보리 계열로 통일하여 전반적으로 따뜻하고 포근한 분위기를 연출했어요. 지친 하루 끝에 온전히 쉴 수 있는 저만의 아늑한 공간이 생겨 정말 행복합니다!!
+                        </p>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="last">
+                        <div class="item"><img src="desk.jpg"></div>
+                        <div class="manual">
+                        <h4>[ 데스크테리어 도와주세요! ]</h4>
+                        <p>안녕하세요! @user2 입니다. 요즘 데스크테리어 (데스크 + 인테리어) 가 유행이잖아요. 저도 제 책상을 한번 꾸며보려고 하는데, 
+                            어떻게 시작해야할지 너무 막막합니다 ㅜ.ㅜ 빈티지 스타일로 아늑하게 꾸미려고 생각중인데, 혹시 해보신 분들 계시다면 꿀팁좀 알려주세요..!!
+                        </p>
+                    </div></div>
+                    
+                    <div class="clear"></div>
+                </div>  
+                       
+            </section>           
+        </main>       
+    </section>
+
+    <footer>
+        <ul id="add">
+            <li>TEL : 010 - 5604 - 0027 E-mail : yml0223@gachon.ac.kr</li>
+            <li>Copyright&copy;2025 오늘의 채움 All rights reserved </li>
+        </ul>
+    </footer>    
+</body>
+</html>

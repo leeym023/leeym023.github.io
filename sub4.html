@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갤러리</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial';
+            background-color: #F8F5F2;
+            color: #5F5A4D;
+        }
+        a:link, a:visited, a:hover, a:active {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+        }
+       
+        header {
+            height: 170px;
+            background-color: white;
+        }
+        header #logo {
+            margin: auto;
+            height: 170px;
+            padding: 20px;
+            display: block;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        main {
+            padding: 40px 20px;
+            margin: auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #D6CCC2;
+            color: #fff;
+        }
+
+
+        .intro {
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            border-radius: 10px;
+            background-color: #EFE9E4;
+        }
+        #hi {
+            width: 100%;
+            margin-top: 20px;     
+        }
+        
+        #hi h2 {
+            text-align: center;
+            padding-bottom: 15px;
+            margin: 0 0 0 20px; 
+            font-weight: bold;
+            border-bottom: solid 2px #D8CFC9;
+            max-width: 900px;
+            width: 90%;
+        }
+        .room{
+            padding: 12px;
+            margin: 30px;
+            border-radius: 8px;           
+        }
+        .title {
+            border-radius: 10px;
+            background-color: #EFE9E4;
+            margin-top: 30px;
+            padding: 10px 0;
+        }
+        
+        .room img {
+            width: 100%;
+            height: 200px;
+            margin-left: 2px;
+            border-radius: 3px;
+        }
+        .room .mo li{
+            margin: 3px 0 0 15px;
+        }
+        .room h3 {
+            margin: 10px;
+        }
+        .room .mo {
+            float: left;
+            margin-top: 10px;
+        }
+        
+        .item {
+            float: left;
+            margin-right: 20px;
+            padding: 10px;
+        }
+        .item img{
+            max-width: 240px;
+            width: 100%;
+            height: 210px;
+           
+            border-radius: 20px;
+        }
+        .manual {
+            margin-top: 40px;
+            padding: 20px;
+        }
+        .manual h4 {
+            padding: 10px;
+        }
+        .rec {
+            background-color: #E6DED8;
+            padding: 10px;
+            margin: 40px;
+            border-radius: 8px;
+        }
+        .rec h3 {
+            margin:10px 0 15px 20px;
+        }
+        .last {
+            border-top: solid 1px #F8F5F2;
+        }   
+    
+        @media screen and (max-width: 800px) {
+    #page {
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+    header {
+        height: auto;
+    }
+    header #logo {
+        height: 130px;
+        padding: 15px;
+    }
+    main {
+        padding: 30px 15px;
+    }
+    #hi, .room {
+        width: 100%;
+        float: none;
+        margin: 0 auto 30px;
+    }
+    .room .mo li {
+        display: inline-block;
+        width: 48%;
+        margin-bottom: 10px;
+    }
+    .room img {
+        width: 100%;
+        height: auto;
+    }
+    .topnav a {
+        padding: 10px 30px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #page {
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+    header #logo {
+        height: 100px;
+        padding: 10px;
+    }
+    .topnav a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    main {
+        padding: 20px 0;
+    }
+    #hi h2 {
+        font-size: 1.2em;
+    }
+    .room h3 {
+        font-size: 1.1em;
+    }
+    .room .mo li {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .room img {
+        height: auto;
+    }
+    .rec img {
+        height: auto;
+    }
+    footer {
+        font-size: 0.9em;
+        padding: 15px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+    header #logo {
+        height: 80px;
+    }
+    main {
+        padding: 15px 0;
+    }
+    #hi p {
+        padding: 10px;
+    }
+    .room h3, .room p {
+        margin: 5px 0;
+    }
+    footer {
+        font-size: 0.85em;
+    }
+}
+        .topnav{
+            overflow: hidden;
+            background-color: #D6CCC2;
+            text-align: center;
+        }
+        .topnav a{ 
+            display: inline-block;
+            font-weight: bold;
+            padding: 8px 50px;
+            text-decoration: none;
+           
+        }
+        
+        #page {
+            max-width: 980px;
+            width: 100%;
+            margin: auto;
+            margin-top: 45px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+               
+    </style>
+</head>
+<body>
+    <header>
+        <section><img id="logo" src="logo.png" ></section>
+        <div class="topnav">
+            <a href="index.html">홈</a>
+            <a href="sub1.html">나의 한칸</a>
+            <a href="sub2.html">취향의 발견</a>
+            <a href="sub3.html">갤러리</a>
+            <a href="sub4.html">쇼핑</a>
+            <a href="sub5.html">커뮤니티</a>
+        </div>         
+    </header>
+
+    <section id="page">
+        <main>
+            <section class="title">
+                <div id="hi">
+                    <h2>Item Shop</h2>
+                </div>
+                <div class="room">
+                    <h3>Best Item</h3>
+                    <ul class="mo">
+                        <li><img src="soft.jpg"></li>
+                        <li>[헬로우슬립] 차렵이불 세트</li>
+                        <li>가격 | 35,900원</li>
+                        <li>★ 4.8</li>
+                    </ul>
+                    <ul class="mo">
+                        <li><img src="curtain.jpg"></li>
+                        <li>[굳커튼] 쉬폰 커튼</li>
+                        <li>가격 | 35,900원</li>
+                        <li>★ 4.7</li>
+                    </ul>
+                    <ul class="mo">
+                        <li><img src="tow.jpg"></li>
+                        <li>[코튼홈] 40수 수건 10장</li>
+                        <li>가격 | 28,900원</li>
+                        <li>★ 4.7</li>
+                    </ul>
+                    <ul class="mo">
+                        <li><img src="met.jpg"></li>
+                        <li>[르메드] 매트리스 S/Q/K</li>
+                        <li>가격 | 23,9000원</li>
+                        <li>★ 4.7</li>
+                    </ul>    
+                </div>
+                <div class="clear"></div>
+                
+                <div class="rec">
+                    <h3>☞ 추천상품</h3>
+
+                    <div class="item"><img src="trolly.jpg"></div>
+                    <div class="manual">
+                        <h4>[ 밀리 360도 회전 이동식 트롤리 ]</h4>
+                        <p>공간에 따라 자유롭게 이동이 가능하고, 360도 회전하는 5단 수납 구조로 효율적인 정리가 가능합니다. 
+                            깔끔하면서도 미니멀한 디자인으로 어느 공간에서든 자연스럽게 어우러져 정돈된 분위기를 만들어줍니다.
+                        </p>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="last">
+                        <div class="item"><img src="my_tera.png"></div>
+                        <div class="manual">
+                        <h4>[ 빈티지 하우스 테라리움 ]</h4>
+                        <p>정돈된 이끼와 식물들을 배치하려 청량한 초록 숲을 만들 수 있습니다. 나만의 작은 유리 온실을 쉽게 만들어보세요.
+                        </p>
+                    </div></div>
+                    
+                    <div class="clear"></div>
+                </div>  
+                       
+            </section>           
+        </main>       
+    </section>
+
+    <footer>
+        <ul id="add">
+            <li>TEL : 010 - 5604 - 0027 E-mail : yml0223@gachon.ac.kr</li>
+            <li>Copyright&copy;2025 오늘의 채움 All rights reserved </li>
+        </ul>
+    </footer>    
+</body>
+</html>
